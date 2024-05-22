@@ -79,6 +79,5 @@ Audio Feedback: Sound effects are played during collisions and other interaction
 UI Elements: Buttons and checkboxes to toggle Galaxy mode and select objects.
 Enjoy exploring the mechanics of the game and creating your own galaxy!
 
-Replace `assets/screenshots/screenshot1.png`
-Replace `assets/screenshots/screenshot2.png`
-Replace `assets/screenshots/screenshot3.png`
+### Screenshots
+![screen1](https://github.com/TikoMarkosyan/galaxy-ball/blob/main/src/assets/images/screenshots/Screenshot1.png?raw=true)
