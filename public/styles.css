@@ -1,0 +1,176 @@
+/* styles.css */
+
+/* General page style */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000000; /* Fallback for older browsers */
+  background: url("./dist/images/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#settigsContainer {
+  height: 80px;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2em;
+}
+
+input[type="radio"] + label:before,
+input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type="radio"] + label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked + label:before {
+  background: #fff;
+  border-color: #7f00ff; /* Example of galaxy style color */
+}
+
+input[type="radio"]:checked + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #7f00ff; /* Example of galaxy style color */
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+/* Checkbox style */
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2em;
+}
+
+input[type="checkbox"] + label:before,
+input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type="checkbox"] + label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: #fff;
+  border-color: #7f00ff; /* Example of galaxy style color */
+}
+
+input[type="checkbox"]:checked + label:after {
+  content: "✔";
+  color: #7f00ff;
+  color: #7f00ff; /* Example of galaxy style color */
+  font-size: 1em;
+  left: 4px;
+}
+
+input[type="radio"]:disabled + label {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input[type="radio"]:disabled + label:before {
+  border-color: #555; /* Color for disabled state border */
+  background: #333; /* Color for disabled state background */
+}
+
+input[type="radio"]:disabled:checked + label:before {
+  background: #555; /* Color for disabled checked state background */
+  border-color: #333; /* Color for disabled checked state border */
+}
+
+/* Button style */
+button {
+  background: linear-gradient(135deg, #7f00ff 0%, #e100ff 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #e100ff 0%, #7f00ff 100%);
+}
+
+button:focus {
+  outline: none;
+}
+
+#forFanImage {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 35%;
+  display: none;
+}
+
+.forFanimge {
+  width: 300px;
+  height: 300px;
+}
+
+#canvasContainer {
+  display: flex;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

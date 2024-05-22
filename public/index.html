@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Ball Simulation with Realistic Gravity</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div id="settigsContainer">
+        <audio id="boom" src="../dist/assets/audio/bigboom.mp3"></audio>
+        <audio id="fall" src="../dist/assets/audio/objectfall.mp3"></audio>
+        <audio id="smallboom" src="./dist/assets/audio/smallboom.mp3"></audio>
+        <audio id="forfun" src="dist/assets/audio/removeAll.mp3"></audio>
+        <input type="radio" id="PlanetRadio" name="selection" value="PLANET" />
+        <label for="PlanetRadio">Planet</label>
+        <input
+          type="radio"
+          id="HallRadio"
+          name="selection"
+          value="BLACK_HALL"
+        />
+        <label for="HallRadio">Black Hall</label>
+        <input
+          type="radio"
+          id="asteroidRadio"
+          name="selection"
+          value="ASTEROID"
+          checked="true"
+        />
+        <label for="asteroidRadio">Asteroid</label>
+        <input type="checkbox" id="buttomGravity" />
+        <label for="buttomGravity">Galaxy mode</label>
+        <button id="removeAll">remove all object</button>
+        <div id="planetDestroyCount">Destroyed Planets: 0</div>
+      </div>
+      <div id="canvasContainer">
+        <canvas id="canvas"></canvas>
+      </div>
+      <script src="dist/index.js" type="module"></script>
+    </div>
+  </body>
+</html>
