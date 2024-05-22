@@ -81,5 +81,7 @@ Enjoy exploring the mechanics of the game and creating your own galaxy!
 
 ### Screenshots
 ![screen1](https://github.com/TikoMarkosyan/galaxy-ball/blob/main/src/assets/images/screenshots/Screenshot1.png?raw=true)
+
 ![screen2](https://github.com/TikoMarkosyan/galaxy-ball/blob/main/src/assets/images/screenshots/Screenshot2.png?raw=true)
+
 ![screen3](https://github.com/TikoMarkosyan/galaxy-ball/blob/main/src/assets/images/screenshots/Screenshot3.png?raw=true)
